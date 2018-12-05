@@ -1,0 +1,11 @@
+if [ "$(readlink -- "/usr/share/backgrounds/linuxmint/default_background.jpg")" = /usr/share/backgrounds/gecos/gecos_panoramico.jp ]
+then
+    mv /usr/share/backgrounds/linuxmint/default_background.jpg /usr/share/backgrounds/linuxmint/default_background.jpg.distrib
+fi
+
+if [ ! -e /usr/share/backgrounds/linuxmint/default_background.jpg ]
+then
+    ln -s /usr/share/backgrounds/gecos/gecos_panoramico.jpg /usr/share/backgrounds/linuxmint/default_background.jpg
+fi
+
+
