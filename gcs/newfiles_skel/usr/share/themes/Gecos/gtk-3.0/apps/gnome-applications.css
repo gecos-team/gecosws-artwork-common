@@ -31,13 +31,20 @@ GucharmapChartable:selected {
  * terminal *
  ************/
 
+vte-terminal.terminal-screen {
+  -TerminalScreen-background-darkness: 0.9;
+  background-color: #3f3f3f;
+  color: #fff; 
+}
+
 TerminalScreen {
     -TerminalScreen-background-darkness: 0.9;
 
     background-color: #3f3f3f;
-	color: #fff;
+    color: #fff;
 }
 
+TerminalWindow notebook,
 TerminalWindow GtkNotebook.notebook {
     border-bottom-width: 0;
     border-right-width: 0;
@@ -65,7 +72,7 @@ TerminalWindow GtkNotebook.notebook {
 }
 
 .nautilus-desktop.nautilus-canvas-item:active,
-.nautilus-desktop.nautilus-canvas-item:prelight,
+.nautilus-desktop.nautilus-canvas-item:hover,
 .nautilus-desktop.nautilus-canvas-item:selected {
     text-shadow: none;
 }
