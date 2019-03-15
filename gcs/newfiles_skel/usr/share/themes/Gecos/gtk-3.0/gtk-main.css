@@ -112,6 +112,25 @@
 @define-color floating_bar_b shade(@theme_bg_color, 0.9);
 @define-color sidebar_bg shade(@theme_base_color, 0.95);
 
+/* lightdm greeter colors */
+@define-color lightdm_bg_color @theme_bg_color;
+@define-color lightdm_fg_color @theme_fg_color;
+@define-color info_fg_color rgb (40, 40, 40);
+@define-color info_bg_color rgb (217, 237, 247);
+@define-color warning_fg_color rgb (77, 77, 77);
+@define-color warning_bg_color rgb (222, 109, 38);
+@define-color question_fg_color rgb (255, 255, 255);
+@define-color question_bg_color rgb (255, 156, 25);
+@define-color error_fg_color rgb (255, 255, 255);
+@define-color error_bg_color rgb (255, 25, 25);
+/*
+@define-color lightdm_bg_color @theme_selected_bg_color;
+@define-color lightdm_fg_color @theme_selected_bg_color;*/
+
+/* shadow effects */
+@define-color light_shadow #fff;
+@define-color dark_shadow #000;
+
 @import url("gtk-main-common.css");
 @import url("gtk-widgets.css");
 @import url("gtk-widgets-borders.css");
@@ -120,3 +139,4 @@
 @import url("apps/gnome-applications.css");
 @import url("apps/cinnamon-applications.css");
 @import url("apps/ubiquity.css");
+@import url("apps/lightdm-gtk-greeter.css");

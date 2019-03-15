@@ -2002,27 +2002,28 @@ GtkStatusbar {
  * switch *
  **********/
 
+
 switch,
 GtkSwitch {
     font-weight: bold;
     font-size: 9px;
 }
 
-switch trough,
+switch,
 GtkSwitch.trough {
     padding: 1px;
     color: @button_fg;
     text-shadow: 0 1px @button_text_shadow;
 }
 
-switch trough:active,
+switch:checked,
 GtkSwitch.trough:active {
     color: @theme_selected_fg_color;
     text-shadow: 1px 1px alpha(black, 0.2);
 }
 
-switch trough:disabled,
-switch trough:disabled:active,
+switch:disabled,
+switch:disabled:active,
 GtkSwitch.trough:disabled,
 GtkSwitch.trough:disabled:active {
     color: @insensitive_fg_color;
@@ -2040,7 +2041,8 @@ GtkSwitch.slider {
 
 image,
 .image {
-    color: @internal_element_color;
+    /*color: @internal_element_color;*/
+    color: @theme_bg_color;
 }
 
 image:hover,

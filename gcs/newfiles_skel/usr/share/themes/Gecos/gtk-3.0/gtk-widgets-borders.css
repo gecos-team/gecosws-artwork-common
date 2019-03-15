@@ -288,7 +288,7 @@ scale trough.vertical:disabled,
  * switch *
  **********/
 
-switch trough,
+switch,
 GtkSwitch.trough {
     border: 2px solid transparent;
     border-radius: 3px;
@@ -300,8 +300,8 @@ GtkSwitch.trough {
                 inset 0 -1px alpha(black, 0.06);
 }
 
-switch trough:disabled,
-switch trough:disabled:active,
+switch:disabled,
+switch:disabled:checked,
 GtkSwitch.trough:disabled,
 GtkSwitch.trough:disabled:active {
     border-image: -gtk-scaled(url("borders/button/button-active-insensitive.png"), url("borders/button/button-active-insensitive@2.png")) 4 / 4px stretch;
