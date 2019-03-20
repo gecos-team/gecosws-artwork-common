@@ -2,17 +2,15 @@
  * button *
  **********/
 
-button,
 toolbar button.raised,
 toolbar .raised button,
 toolbar combobox button,
-.primary-toolbar button:hover,
+.primary-toolbar button,
 .spinbutton.vertical button,
 .button,
 .toolbar .button.raised,
 .toolbar .raised .button,
 .toolbar GtkComboBox .button,
-.primary-toolbar .button:hover,
 .spinbutton.vertical .button {
     background-color: transparent;
     background-image: linear-gradient(to bottom,
@@ -20,23 +18,22 @@ toolbar combobox button,
                             @button_bg_b);
 }
 
-.primary-toolbar button,
+button:disabled,
 .primary-toolbar button:disabled,
-.primary-toolbar .button,
 .primary-toolbar .button:disabled {
     background-color: transparent;
     background-image: none;
 }
 
-button:hover,
+headerbar button:hover,
 toolbar button.raised:hover,
 toolbar .raised button:hover,
 toolbar combobox button:hover,
-.spinbutton.vertical button:hover,
 .button:hover,
 .toolbar .button.raised:hover,
 .toolbar .raised .button:hover,
 .toolbar GtkComboBox .button:hover,
+.primary-toolbar .button:hover,
 .spinbutton.vertical .button:hover {
     background-color: transparent;
     background-image: linear-gradient(to bottom,
