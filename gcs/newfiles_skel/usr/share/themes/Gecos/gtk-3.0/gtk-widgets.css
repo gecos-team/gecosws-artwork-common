@@ -511,6 +511,16 @@ GdMainIconView.content-view {
  * csd *
  *******/
 
+decoration {
+    border-width: 0;
+    border-radius: 6px 6px 0 0;
+    box-shadow: 0 2px 8px 3px alpha(black, 0.5),
+                0 0 0 1px darker(@theme_bg_color);
+
+    /* this is used for the resize cursor area */
+    margin: 10px;
+}
+
 .titlebar {
     border-radius: 6px 6px 0 0;
     background-image: linear-gradient(to bottom,
