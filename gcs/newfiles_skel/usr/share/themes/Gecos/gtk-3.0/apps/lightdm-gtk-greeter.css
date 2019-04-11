@@ -3,6 +3,10 @@
 	background-color: transparent;
 }
 
+#menubar {
+    border: none;
+}
+
 /*********
  * panel *
  *********/
