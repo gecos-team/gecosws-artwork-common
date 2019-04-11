@@ -2157,6 +2157,7 @@ menubar, .toolbar.menubar, toolbar.menubar {
     -GtkToolbar-button-relief: normal;
 }
 
+menubar,
 .primary-toolbar toolbar,
 .primary-toolbar .toolbar,
 .primary-toolbar.toolbar {
