@@ -142,7 +142,7 @@ button,
 .button {
     border-style: solid;
     border-color: transparent;
-    color: @button_fg;
+    color: @theme_text_color;
     text-shadow: 0 1px @button_text_shadow;
     -gtk-icon-shadow: 0 1px @button_text_shadow;
 }
@@ -511,6 +511,16 @@ GdMainIconView.content-view {
  * csd *
  *******/
 
+decoration {
+    border-width: 0;
+    border-radius: 6px 6px 0 0;
+    box-shadow: 0 2px 8px 3px alpha(black, 0.5),
+                0 0 0 1px darker(@theme_bg_color);
+
+    /* this is used for the resize cursor area */
+    margin: 10px;
+}
+
 .titlebar {
     border-radius: 6px 6px 0 0;
     background-image: linear-gradient(to bottom,
@@ -822,7 +832,7 @@ headerbar .title,
     font-weight: bold;
     /*font-size: 11px;*/
     padding: 0 12px 0 12px;
-    color: white;
+    color: @theme_text_color;
 }
 
 headerbar .subtitle,
@@ -2092,7 +2102,7 @@ headerbar button.minimize.titlebutton image,
 headerbar button.maximize.titlebutton image,
 headerbar button.close.titlebutton image,
 headerbar button.image-button image {
-	color: white;
+	color: @theme_text_color;
 }
 
 headerbar button.minimize.titlebutton:hover image,
@@ -2147,6 +2157,7 @@ menubar, .toolbar.menubar, toolbar.menubar {
     -GtkToolbar-button-relief: normal;
 }
 
+menubar,
 .primary-toolbar toolbar,
 .primary-toolbar .toolbar,
 .primary-toolbar.toolbar {
