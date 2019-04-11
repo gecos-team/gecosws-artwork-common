@@ -142,7 +142,7 @@ button,
 .button {
     border-style: solid;
     border-color: transparent;
-    color: @button_fg;
+    color: @theme_text_color;
     text-shadow: 0 1px @button_text_shadow;
     -gtk-icon-shadow: 0 1px @button_text_shadow;
 }
@@ -832,7 +832,7 @@ headerbar .title,
     font-weight: bold;
     /*font-size: 11px;*/
     padding: 0 12px 0 12px;
-    color: white;
+    color: @theme_text_color;
 }
 
 headerbar .subtitle,
@@ -2102,7 +2102,7 @@ headerbar button.minimize.titlebutton image,
 headerbar button.maximize.titlebutton image,
 headerbar button.close.titlebutton image,
 headerbar button.image-button image {
-	color: white;
+	color: @theme_text_color;
 }
 
 headerbar button.minimize.titlebutton:hover image,
